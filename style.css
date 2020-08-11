@@ -1,13 +1,24 @@
 body{
     margin: 0;
+    padding: 0;
     background-image: url(skincare.jpg);
     background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+} 
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+}
+main{
+    margin: 0;
+    padding: 0;
 }
 
-
 /************ NAVIGATION ***********/
+
 .main-nav{
-    display: flex;
     width: 100%;
     font-size: 20px;
     margin: 0;
@@ -15,6 +26,7 @@ body{
     background-color: white;
     opacity: 0.8;
     position: fixed;
+    top: 0;
 }
 
 ul{
@@ -36,60 +48,162 @@ li:hover{
     background-color: lightgray;
 }
 
-/************ MAIN TITLE PAGE *********/
-.container{
+/********* MAIN ***********/
+
+.title{
+    /* background-color: cornflowerblue; */
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;  
+}
+.title h1, .title h2{
+    text-align: center;
+    color: white;
+}
+.title h1{
+    padding-top: 30px;
+    font-size: 50px;
+}
+.title h2{
+    font-size: 30px;
+}
+
+
+.quiz{
+    /* background-color: darkcyan; */
+    background-color: darkolivegreen;
+    width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* justify-content: start;
+    align-items: center; */
+}
+.quiz p{
+    padding: 40px 0 40px 0;
+    margin: auto;
+    width: 50%;
+    font-size: 40px;
+}
+
+/* .quiz .space{
+    width: 10%;
+} */
+
+.button{
+    margin: auto;
+    /* width: 50%; */
+    padding: 0 30px 0 30px;
+}
+
+button{
+    appearance: button;
+    background-color: darkolivegreen;
+    border: none;
+    border-radius: 50px;
+    border: 3px solid #ffffff;
+    padding: 15px 50px 15px 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.empty{
+    /* background-color: white; */
+    width: 100%;
+    height: 300px;
+}
+
+.mission{
     display: flex;
+    background-color: darkolivegreen;
+    width: 100%;
+    /* height: 200px; */
+    justify-content: center;
+    align-items: center;
+
+}
+.space{
+    width: 30%;
+}
+.mission p{
+    font-size: 35px;
+    padding: 40px 0 40px 0;
+}
+
+@media only screen and (max-width: 700px){
+    li{
+        padding: 5px;
+    }
+    .title{
+        margin-top: 15px;
+    }
+    .empty{
+        height: 200px;
+    }
+    .quiz{
+        grid-template-columns: 1fr;
+    }
+
+}
+/*********** MAIN TITLE PAGE ********/
+/* .cover{
+    width: 100%; 
+}*/
+/* .container{
+    display: flex;
+    flex-direction: c;
     height: 60vh;
     justify-content: center;
+} */
+/* .flex-wrapper{
+    display: flex; 
+    flex-direction: column;
 }
-.container h1{
+.title h1{
+    padding-top: 50px;
     text-align: center;
     color: white;
     font-size: 60px;
 }
-.container h2{
+.title h2{
     color: white;
+    text-align: center;
     font-size: 40px;
-}
+} */
 
 /************ MISSION **************/
-.mission{
-    display: flex;
+/* .mission{
+    display: block;
     background-color: white;
     opacity: .6;
     margin: 0;
+    width: 100%;
+    position: fixed;
 }
 
-@media only screen and (min-width: 200px){
-    .mission{
-        height: 40vh;
-    }
+@media only screen and (max-width: 650px){
     .mission p{
         margin-top: 30px;
+        font-size: 30px;
     }
 }
 
-.mission p{
-    margin: 10px 0 10px 30px;
+p{
+    margin: 50px 0 50px 30px;
     margin-left: 55px;
     font-size: 40px;
     text-align: left;
-}
-
-
-
-/* body{
-    background-image: url(skincare.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-h1, h2{
-    color: #ffffff;
-    text-align: center;
-    font-size: 75px;
-}
-h2{
-    font-size: 25px;
 } */
+
+/*********** Quiz **********/
+/* 
+.quiz{
+    display: block;
+    background-color: white;
+    opacity: .6;
+    width: 100%;
+    position: fixed;
+    margin: 200px;
+    width: 100%;
+}  */
+

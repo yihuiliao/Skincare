@@ -1,4 +1,84 @@
 body{
+    margin: 0;
+    background-image: url(skincare.jpg);
+    background-size: 100%;
+}
+
+
+/************ NAVIGATION ***********/
+.main-nav{
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    opacity: 0.8;
+    position: fixed;
+}
+
+ul{
+    margin: 0;
+}
+
+li{
+    list-style: none;
+    float: left;
+    padding: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li:hover{
+    background-color: lightgray;
+}
+
+/************ MAIN TITLE PAGE *********/
+.container{
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+}
+.container h1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+.container h2{
+    color: white;
+    font-size: 40px;
+}
+
+/************ MISSION **************/
+.mission{
+    display: flex;
+    background-color: white;
+    opacity: .6;
+    margin: 0;
+}
+
+@media only screen and (min-width: 200px){
+    .mission{
+        height: 40vh;
+    }
+    .mission p{
+        margin-top: 30px;
+    }
+}
+
+.mission p{
+    margin: 10px 0 10px 30px;
+    margin-left: 55px;
+    font-size: 40px;
+    text-align: left;
+}
+
+
+
+/* body{
     background-image: url(skincare.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,4 +92,4 @@ h1, h2{
 }
 h2{
     font-size: 25px;
-}
+} */
